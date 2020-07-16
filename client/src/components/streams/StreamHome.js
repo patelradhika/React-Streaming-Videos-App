@@ -12,7 +12,7 @@ class StreamHome extends React.Component {
     renderList = () => {
         return this.props.streams.map((stream) => {
             return (
-                <div key={stream.id} className="card">
+                <div key={stream.id} className="card mt-4">
                     <div className="card-body">
                         <h5 className="card-title">{stream.title}</h5>
                         <p className="card-text">{stream.description}</p>
@@ -63,7 +63,7 @@ class StreamHome extends React.Component {
 
     render() {
         return (
-            <div className="container mt-4">
+            <div className="container" style={{ marginTop: "50px" }}>
                 {this.renderList()}
                 {this.renderCreateButton()}
             </div>
